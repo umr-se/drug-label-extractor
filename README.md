@@ -50,7 +50,7 @@ uvicorn app:app --reload
 ### API Endpoints
 #### Extract Label Text
 ```http
-POST /extract-label
+POST /extract-text/
 ```
 **Request:**
 - `multipart/form-data` with an image file
