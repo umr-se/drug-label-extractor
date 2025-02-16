@@ -19,15 +19,12 @@ A FastAPI-based backend service that extracts drug/medicine label text from imag
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/drug-label-extractor.git
+git clone https://github.com/umr-se/drug-label-extractor.git
 cd drug-label-extractor
 
 # Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ## Configuration
@@ -47,7 +44,7 @@ pip install fastapi uvicorn google-generativeai pillow pandas openpyxl
 ## Usage
 ### Running the FastAPI Server
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn app:app --reload
 ```
 
 ### API Endpoints
@@ -71,11 +68,13 @@ POST /extract-label
 - Extracted text is returned as JSON
 - An Excel file (`output.xlsx`) is also generated
 
-## License
-MIT License
-
 ## Contributing
 Feel free to open issues or submit pull requests!
 
 ## Author
-[Your Name](https://github.com/your-username)
+[umer](https://github.com/umr-se)
+
+![drug](https://github.com/user-attachments/assets/37ed5583-0f51-4676-a976-c0aa7d960b62)
+![json](https://github.com/user-attachments/assets/9ce840a5-ff1c-49dd-9086-e2170a429bd0)
+![excel](https://github.com/user-attachments/assets/98bd8b7f-56ec-465f-9ef4-7bcef624d8ca)
+
